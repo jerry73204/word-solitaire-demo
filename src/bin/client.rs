@@ -2,8 +2,8 @@ use anyhow::{Context, Result};
 use async_std::{io::BufReader, net::TcpStream};
 use clap::Parser;
 use futures::prelude::*;
-use game_server::{ServerMessage, UserCommand};
 use std::net::SocketAddr;
+use word_solitaire_demo::{ServerMessage, UserCommand};
 
 #[derive(Debug, Parser)]
 struct Opts {

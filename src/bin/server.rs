@@ -5,7 +5,6 @@ use async_std::{
 };
 use clap::Parser;
 use futures::{prelude::*, stream::FuturesUnordered, AsyncWriteExt};
-use game_server::{SuffixMatcher, UserCommand};
 use rand::prelude::*;
 use std::{
     collections::HashSet,
@@ -15,6 +14,7 @@ use std::{
     sync::Arc,
 };
 use tokio::sync::watch;
+use word_solitaire_demo::{SuffixMatcher, UserCommand};
 
 #[derive(Debug, Parser)]
 struct Opts {
